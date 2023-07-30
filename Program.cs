@@ -1,23 +1,14 @@
-﻿List<string> list = new List<string>();
-list.Add("Domates");
-list.Add("Patates");
-list.Add("Sogan");
-list.Add("Biber");
-list.Add("Hıyar");
-list.Add("Karpuz");
-list.Add("Kavun");
-list.Add("Acur");
-list.Add("Kivi");
-list.Add("Ananas");
-list.Add("Mango");
+﻿using zero_to_hero_taner_saydam;
 
-Console.WriteLine("For Döngüsü");
-for (int i = 0; i < list.Count; i++)
+ExampleClass example = new ExampleClass()
 {
-    Console.WriteLine(list[i]);
-}
-Console.WriteLine("Foreach Döngüsü");
-foreach (var item in list)
-{
-    Console.WriteLine(item);
-}
+    Id = 1,
+    Property = "test",
+    Money = 15.1M,
+    isActive = true
+};
+
+Console.WriteLine(example.Property);
+Console.WriteLine(example.Money);
+Console.WriteLine(example.isActive);
+example.Add();
